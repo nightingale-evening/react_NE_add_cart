@@ -5,7 +5,7 @@
 * mongodb
 
 1. Clone this repository
-2. Create file .env and add the following code:
+2. Create file server/.env and add the following code:
     ```bash
      DATABASE_URL=mongodb://localhost/datacart
      PORT=5000
