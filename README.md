@@ -6,8 +6,9 @@
 
 1. Clone this repository
 2. Create file .env and add the following code:
-    DATABASE_URL=mongodb://localhost/datacart
-    PORT=5000
+    ```bash
+     DATABASE_URL=mongodb://localhost/datacart
+     PORT=5000
 3. Install server dependencies
     ```bash
     $ cd server
