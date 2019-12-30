@@ -18,7 +18,7 @@ class Product extends Component {
     let { product } = this.props;
     // hiển thị sản phẩm lên màn hình
     return (
-      <Col sm={3}>
+      <Col sm={4}>
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={product.image} alt={product.name} />
           <Card.Body>

@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import { Nav, Navbar, FormControl } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
+import {connect} from "react-redux";
 class NavigationBar extends Component {
   render() {
+    let {totalQuantity} = this.props;
     return (
       <div>
         <Navbar bg="light" expand="lg">
@@ -12,7 +16,7 @@ class NavigationBar extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/">Trang Chủ</Nav.Link>
-              <Nav.Link href="/cart">Giỏ Hàng</Nav.Link>
+              <Nav.Link href="/cart">Giỏ Hàng <FontAwesomeIcon icon={faCartArrowDown}/> {totalQuantity}</Nav.Link>
               <Nav.Link href="/about">Về Chúng Tôi</Nav.Link>
             </Nav>
             <Form inline>
@@ -29,5 +33,10 @@ class NavigationBar extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return {
+      totalQuantity: state.cart.reduce((total, item) => total + parseInt(item.quantity), 0),
+  };
+}
 
-export default NavigationBar;
+export default connect(mapStateToProps)(NavigationBar);
