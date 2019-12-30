@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import { ButtonToolbar } from "react-bootstrap";
 class CartResult extends Component {
   render() {
-    //  nhậ props truyền từ CartContainer
+    //  nhận props truyền từ CartContainer
     let { cart } = this.props;
     return (
      <tbody>

@@ -14,7 +14,7 @@ class CartItem extends Component {
       <tbody>
         <tr>
           <td>
-            <img src={item.product.image} alt={item.product.name}></img>
+            <img src={item.product.image} alt={item.product.name} style={{maxHeight: "200px"}}></img>
           </td>
           <td>{item.product.name}</td>
           <td>{item.product.price}</td>

@@ -1,2 +1,2 @@
-export const API_URL = 'https://back-end-add-to-cart-mern.herokuapp.com';
+export const API_URL = 'http://localhost:5000';
 //localhost:2000/
