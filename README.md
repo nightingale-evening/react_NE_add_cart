@@ -1,6 +1,4 @@
-### Prerequisites
-
-# node / npm / mongodb
+## node / npm / mongodb
 
 1. Clone this repository
 2. Create file .env and add the following code:
