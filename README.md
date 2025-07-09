@@ -32,10 +32,4 @@
     $ cd client
     $ yarn start
     ```
-4. Browse to `http://localhost:3000/`
-
-
-## License
-
-This project is made available under the **MIT License**.
-
+4. Browse to `http://localhost:3000/'
